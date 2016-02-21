@@ -20,9 +20,9 @@ echo $full_path
 for file in "$full_path"/*
 do
     if [[ -f $file ]]; then
-        # Format file name, label
-        # Label is set to 1, you need to manually set this :(
-        line="$file,1"
-        echo $line >> $out_file
+	# Format file name, label
+	# Label is set to 1, you need to manually set this :(
+	line="$file 1"
+	echo $line >> $out_file
     fi
 done
